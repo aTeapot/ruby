@@ -10,7 +10,7 @@ Computes total duration of mp3 files in a given directory.
 
 ### PKP
 
-Simple DSL to find PKP connections. Kraków is a default station and also are current time and date.
+Simple DSL to find PKP connections. Kraków is a default station and so are current time and date.
 
 Examples:
 
