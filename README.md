@@ -27,4 +27,8 @@ find 'Krynica', 'Muszyna'
 find do
   to('Poznań').after('10:00')
 end
+
+from_gdansk_glowny_to_sopot do
+  after '14:05'     # block is optional
+end
 ```

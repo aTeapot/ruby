@@ -21,3 +21,14 @@ def get_date(html)
   date = doc.css(".selected td[data-value]").first["data-value"]
   [date[0..-6], date[-5..-1]]
 end
+
+def method_missing(name, *args, &block)
+  match = name.to_s.match(/^from_(\w+)_to_(\w+)/)
+  if match
+    from = match[1].gsub('_', ' ')
+    to = match[2].gsub('_', ' ')
+    find(from, to, &block)
+  else
+    super
+  end
+end
