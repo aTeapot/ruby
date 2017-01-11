@@ -15,20 +15,20 @@ Simple DSL to find PKP connections. Kraków is a default station and so are curr
 Examples:
 
 ```ruby
-find do
+Pkp.find do
   from 'Chrzanów'
   to 'Krzeszowice'
   after '12:55'
   date '14.11.14'
 end
 
-find 'Krynica', 'Muszyna'
+Pkp.find 'Krynica', 'Muszyna'
 
-find do
+Pkp.find do
   to('Poznań').after('10:00')
 end
 
-from_gdansk_glowny_to_sopot do
+Pkp.from_gdansk_glowny_to_sopot do
   after '14:05'     # block is optional
 end
 ```
